@@ -1,64 +1,71 @@
-/* Container for the login form */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #DFF2EB;
-  /* Light Greenish */
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  font-family: 'Arial', sans-serif;
 }
 
-/* Login box */
 .login-box {
-  background-color: #B9E5E8;
-  /* Light Blue */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
   width: 100%;
   max-width: 400px;
 }
 
-/* Input fields */
-.login-box input {
-  width: 300px;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #7AB2D3;
-  /* Light Blue */
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4a4a4a;
 }
 
-/* Submit button */
-.login-box button {
+.login-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #7a7a7a;
+}
+
+.login-form input {
+  width: 300px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #555;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #00aaff;
+}
+
+.login-form button {
   width: 100%;
   padding: 12px;
-  background-color: #4A628A;
-  /* Dark Blue */
+  background-color: #00aaff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-/* Button hover effect */
-.login-box button:hover {
-  background-color: #3c4d65;
+.login-form button:hover {
+  background-color: #007acc;
 }
 
-/* Error message */
 .error-message {
   color: red;
-  text-align: center;
+  font-size: 14px;
   margin-top: 10px;
-}
-
-.f {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }

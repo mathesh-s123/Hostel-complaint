@@ -1,79 +1,109 @@
-/* Global Styles */
-.background {
-    background-color: #FFFFFF; /* Light green background */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* User Panel Header */
-  h2 {
-    color: #4A628A; /* Dark Blue */
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* Subheadings (h3) */
-  h3 {
-    color: #7AB2D3; /* Light Blue */
-    margin-bottom: 15px;
-  }
-  
-  /* Form Section */
-  form {
-    background-color: #B9E5E8; /* Soft blue background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  /* Textarea */
-  textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #7AB2D3;
-    border-radius: 5px;
-    background-color: #fff;
-    margin-bottom: 15px;
-  }
-  
-  /* Submit Button */
-  button[type="submit"] {
-    background-color: #4A628A; /* Dark Blue */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    width: 100%;
-  }
-  
-  /* Submit Button Hover */
-  button[type="submit"]:hover {
-    background-color: #3a4f6d; /* Darker shade of blue on hover */
-  }
-  
-  /* Status Message */
-  p {
-    font-size: 1rem;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #4A628A;
-  }
-  
-  /* Complaint List Section */
-  div > div {
-    background-color: #B9E5E8; /* Soft Blue background for each complaint card */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-  }
-  
-  /* Complaint Text */
-  p strong {
-    color: #4A628A;
-  }
-  
+/* General Styles */
+.user-portal {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4a628a, #7ab2d3);
+  /* Gradient background */
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.user-portal-header {
+  background-color: #4a628a;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.user-portal-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Complaint Form Section */
+.complaint-form-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.complaint-form-section h2 {
+  margin-bottom: 15px;
+  color: #4a628a;
+}
+
+.complaint-form textarea {
+  width: 97%;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.complaint-form button {
+  background-color: #4a628a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.complaint-form button:hover {
+  background-color: #3a4f6d;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a628a;
+  text-align: center;
+}
+
+/* Complaint List Section */
+.complaint-list-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.complaint-list-section h2 {
+  margin-bottom: 15px;
+  color: #4a628a;
+}
+
+.complaint-card {
+  background-color: #e2f3f9;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-card p {
+  margin: 5px 0;
+  color: #4a628a;
+}
+
+.complaint-card p strong {
+  font-weight: bold;
+}

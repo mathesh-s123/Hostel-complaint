@@ -1,105 +1,155 @@
 /* Admin Panel Container */
 .admin-panel-container {
-    background-color: #DFF2EB; /* Light Greenish */
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    /* Light gradient background */
     min-height: 100vh;
     padding: 20px;
     font-family: Arial, sans-serif;
-  }
-  
-  /* Header */
-  h2 {
-    color: #4A628A; /* Dark Blue */
+}
+
+/* Header */
+h2 {
+    color: #333;
+    /* Dark text */
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
+}
 
-  }
-  
-  h3 {
-    color: #4A628A; /* Dark Blue */
+h3 {
+    color: #333;
     margin-top: 40px;
-  }
-  
-  /* File Upload Section */
-  input[type="file"] {
+}
+
+/* File Upload Section */
+input[type="file"] {
     padding: 10px;
     margin-right: 10px;
-  }
-  
-  input[type="file"]:focus {
+}
+
+input[type="file"]:focus {
     outline: none;
-    border: 2px solid #7AB2D3; /* Light Blue Border on Focus */
-  }
-  
-  button[type="button"] {
-    background-color: #4A628A; /* Orange */
+    border: 2px solid #bbdefb;
+    /* Light Blue Border on Focus */
+}
+
+button[type="button"] {
+    background-color: #4a90e2;
+    /* Blue Button */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Hover effect for file upload button */
-  button[type="button"]:hover {
-    background-color: #4A628A;
-  }
-  
-  .error-message {
+}
+
+/* Hover effect for file upload button */
+button[type="button"]:hover {
+    background-color: #357ab8;
+    /* Darker shade of blue */
+}
+
+.error-message {
     color: red;
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
-  }
-  
-  /* Card styling */
-  .card {
-    background-color: #B9E5E8; /* Light Blue background for cards */
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    /* White card background */
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-title {
-    color: #4A628A; /* Dark Blue for card titles */
-  }
-  
-  .card-body {
-    color: #4A628A; /* Dark Blue text color */
-  }
-  
-  .card-text {
-    color: #7AB2D3; /* Light Blue text for card content */
-  }
-  
-  .card-body .btn {
-    background-color: #E26C06; /* Button color inside cards */
+    /* Subtle shadow */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    height: 100%  !important;
+
+    /* Align content to the left */
+}
+
+.card-title {
+    color: #4a90e2;
+    /* Blue for card titles */
+    font-size: 1.2rem;
+}
+
+.card-body {
+    color: #333;
+    padding: 15px;
+}
+
+.card-text {
+    color: #555;
+    /* Neutral text color */
+}
+
+.card-body .btn {
+    background-color: #ff9800;
+    /* Orange Button */
     border: none;
     color: white;
-  }
-  
-  .card-body .btn:hover {
-    background-color: #d75f05;
-  }
-  
-  textarea {
+}
+
+.card-body .btn:hover {
+    background-color: #e68900;
+    /* Darker shade of orange */
+}
+
+textarea {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #7AB2D3; /* Light Blue border */
-  }
+    border: 1px solid #bbdefb;
+    /* Light Blue border */
+}
 
-  /* Button for "View Details" */
+/* Button Styling */
 button {
-    background-color: #4A628A; /* Dark Blue */
+    background-color: #4a90e2;
+    /* Blue Button */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #7AB2D3; /* Light Blue on hover */
-  }
-  
-  
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #357ab8;
+    /* Darker Blue */
+}
+
+/* Responsive Row Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col-md-4 {
+    flex: 0 0 calc(33.333% - 20px);
+    /* 3 cards per row */
+    max-width: calc(33.333% - 20px);
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 calc(50% - 20px);
+        /* 2 cards per row on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        /* 1 card per row on very small screens */
+        max-width: 100%;
+    }
+}
